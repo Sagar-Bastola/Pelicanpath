@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Navbar    from './components/Navbar.jsx'
-import Home      from './pages/Home.jsx'
+import Navbar from './components/Navbar.jsx'
+import Home from './pages/Home.jsx'
 import DecodeTab from './components/DecodeTab.jsx'
-import ChatTab   from './components/ChatTab.jsx'
-import RiskTab   from './components/RiskTab.jsx'
-import PlanTab   from './components/PlanTab.jsx'
-import TOPSTab   from './components/TOPSTab.jsx'
+import ChatTab from './components/ChatTab.jsx'
+import RiskTab from './components/RiskTab.jsx'
+import PlanTab from './components/PlanTab.jsx'
+import TOPSTab from './components/TOPSTab.jsx'
 import ScholarshipsTab from './components/ScholarshipsTab.jsx'
 
 export default function App() {

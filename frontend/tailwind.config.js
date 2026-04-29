@@ -1,9 +1,13 @@
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // Added ts/tsx just in case
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans:    ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Sora', 'system-ui', 'sans-serif'],
       },
       colors: {
@@ -34,18 +38,18 @@ export default {
         },
       },
       animation: {
-        'fade-up':  'fadeUp .4s ease forwards',
-        'fade-in':  'fadeIn .3s ease forwards',
+        'fade-up':   'fadeUp .4s ease forwards',
+        'fade-in':   'fadeIn .3s ease forwards',
         'pulse-slow': 'pulse 3s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
-          from: { opacity: 0, transform: 'translateY(12px)' },
-          to:   { opacity: 1, transform: 'translateY(0)' },
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to:   { opacity: '1', transform: 'translateY(0)' },
         },
         fadeIn: {
-          from: { opacity: 0 },
-          to:   { opacity: 1 },
+          from: { opacity: '0' },
+          to:   { opacity: '1' },
         },
       },
     },
